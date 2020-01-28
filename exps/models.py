@@ -70,7 +70,7 @@ class Profile(models.Model):
     program = models.CharField(max_length=2, choices=program_values)
     department = models.CharField(max_length=3, choices=department_values)
     bio = models.TextField(max_length=1000)
-    contact = models.IntegerField(max_length=10)
+    contact = models.IntegerField()
 
     def __str__(self):
         return self.user.name
